@@ -38,13 +38,13 @@ img { display: block; }
   padding: 16px 0;
 }
 .logo {
-  display: flex; align-items: center; gap: 10px;
+  display: flex; align-items: center; gap: 7px;
   font-size: 22px; font-weight: 800; letter-spacing: -.5px;
 }
-.logo__flame { display: inline-flex; align-items: center; }
+.logo__flame { display: inline-flex; align-items: center; height: 38px; }
 .logo__flame img {
-  height: 34px; width: auto; display: block;
-  /* gif на тёмном фоне — screen убирает фон, остаётся только пламя */
+  height: 38px; width: auto; display: block; object-fit: contain;
+  /* фон гифки прозрачный; screen дополнительно убирает любой тёмный кант на тёмном хедере */
   mix-blend-mode: screen;
 }
 .logo__text em { color: var(--fire); font-style: normal; }
