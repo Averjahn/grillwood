@@ -41,7 +41,12 @@ img { display: block; }
   display: flex; align-items: center; gap: 10px;
   font-size: 22px; font-weight: 800; letter-spacing: -.5px;
 }
-.logo__flame { font-size: 26px; }
+.logo__flame { display: inline-flex; align-items: center; }
+.logo__flame img {
+  height: 34px; width: auto; display: block;
+  /* gif на тёмном фоне — screen убирает фон, остаётся только пламя */
+  mix-blend-mode: screen;
+}
 .logo__text em { color: var(--fire); font-style: normal; }
 .nav { display: flex; gap: 24px; margin-left: auto; }
 .nav a { font-size: 14px; color: var(--muted); transition: color .2s; }
