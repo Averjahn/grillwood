@@ -230,7 +230,6 @@ img { display: block; }
 }
 .map-frame {
   display: block; width: 100%; border: 0;
-  filter: invert(0.92) hue-rotate(180deg) brightness(0.95) contrast(0.9) saturate(0.8);
 }
 
 /* ── CONTACTS ── */
